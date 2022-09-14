@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .active-cam{
+    background-color: rgb(9, 9, 56);
+    padding: 10px 10px;
+    border-radius: 10px;
+  }
+
+
+
+.log-out{
+    background-color: #FF0000;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+  
+  /* =========================Nav section==================== */
+  
+  nav {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #d60505;
+    position: fixed;
+  }
+  
+  ul {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    display: flex;
+    margin-block: 0;
+  }
+  
+  .profile-btn{
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 10px;
+    margin-top: 3px;
+    
+  }
+  ul li {
+    padding: 10px 10px;
+    border-right: 1px solid rgb(71, 71, 71);
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .right-nav {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .input {
+    height: 35px;
+    width: 220px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffffff;
+  }
+
+
+  
+  .log {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .log-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* ===========================contact section================ */
+  .dashboard{
+      width: 100%;
+      padding: 50px 20px;
+  }
+
+  .dashboard-wrapper{
+      display:flex;
+      width: 90%;
+      padding: 20px;
+      border-radius: 100px;
+      background-color:#FFE4E4;
+      margin: 50px auto;
+
+  }
+
+  .side-navi{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    padding: 50px;
+    width: 20%;
+    background: #FFA2A2;
+    border-radius: 100px 0px 0px 100px;
+  }
+  .side-navi div{
+      height: 25%;
+      margin-top: 100px;
+  }
+  .side-navi div p{
+      font-size: 20px;
+      font-weight: 600;
+  }
+
+  .first-info{
+    display: flex;
+    justify-content: start;
+    align-self: flex-start;
+    gap: 100px;
+    align-items: center;
+    padding: 50px;
+  }
+
+  .active{
+      color: #FF0000;
+  }
+
+  /* ====table===== */
+
+  table { 
+	width: 750px; 
+	border-collapse: collapse; 
+	margin:50px auto;
+	}
+
+/* Zebra striping */
+tr { 
+	background: #fff; 
+	}
+
+th { 
+	background: transparent; 
+	color: rgb(0, 0, 0); 
+	font-weight: bold; 
+	}
+
+td, th { 
+	padding: 10px; 
+	border: 1px solid #ccc;
+	text-align: left; 
+	font-size: 18px;
+	}
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	table { 
+	  	width: 100%; 
+	}
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		/* Label the data */
+		content: attr(data-column);
+
+		color: #000;
+		font-weight: bold;
+	}
+
+}
+/* .total-info{
+    margin: 20px;
+} */
+
+.last-info{
+    display: flex;
+    padding: 20px;
+}
+
+h3{
+    text-align: center;
+    color: red;
+    font-size: 32px;
+}
+
+.card-round{
+    background-color: white;
+    border-radius: 30%;
+    margin: 20px;
+    padding: 10px;
+}
+
+.time{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+h4{
+    text-align: center;
+    font-size: 22px; 
+    color: #970000;
+    margin-block:10px ;
+}
+/* .total-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.num{
+    /* font-size: 22px; */
+    font-weight: bold;
+    color: #970000;
+}
+
+
+.appoint{
+    width: 24px;
+    height: 24px;
+}
+  
+
+  /* =========================================================== */
+    
+footer {
+    background-color: #d60505;
+    color: #fff;
+  }
+  
+  .footer-wraper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .middle-disc {
+    display: flex;
+    gap: 120px;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .footer-heading {
+    font-size: 20px;
+  }
+  
+  .subscrib {
+    align-self: center;
+  }
+  
+  input {
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  textarea{
+     width: 100%;
+     border: none;
+     padding: 5px;
+     margin-top: 10px;
+  }
+
+  button{
+    width: 20%;
+    background-color: #FF0000;
+    margin-top: 15px;
+    cursor: pointer;
+    padding: 15px 10px;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+  }
+  
+  
+  form a {
+    background-color: rgb(9, 9, 56);
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .last-footer {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 

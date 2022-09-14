@@ -1,0 +1,349 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* =========================Nav section==================== */
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #d60505;
+  position: fixed;
+  z-index: 5;
+}
+
+ul {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  display: flex;
+  margin-block: 0;
+}
+
+ul li {
+  padding: 10px 10px;
+  border-right: 1px solid rgb(71, 71, 71);
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.right-nav {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.input {
+  height: 35px;
+  width: 220px;
+  padding: 5px;
+  border-radius: 5px;
+  /* border: none; */
+  background-color: #ffffff;
+}
+
+.log {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==================================sign-up section============================ */
+section {
+  width: 100%;
+  background-color: #ffe4e4;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.log-in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.log-col {
+  padding: 10px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"] {
+  border: 2px solid black;
+  border-radius: 4px;
+}
+input[type="number"] {
+  border: 2px solid black;
+  border-radius: 4px;
+}
+input[type="email"] {
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.block-item {
+  visibility: hidden;
+}
+
+.selector {
+  width: 250px;
+  padding: 8px;
+  height: 40px;
+  margin: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+.first {
+  padding-inline-end: 0px;
+  padding-top: 0px;
+}
+
+input {
+  border: solid black 1px;
+  margin: 10px;
+  padding: 10px;
+}
+
+button {
+  width: 90%;
+  background-color: #ff0000;
+  padding: 15px 10px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  text-align: center;
+}
+
+input.sbttn {
+  width: 90%;
+  background-color: #ff0000;
+  padding: 15px 10px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  text-align: center;
+}
+
+.inner-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.last-col {
+  background-color: #fff;
+  height: 472px;
+  padding-block: 0px;
+}
+
+.sign-up-img {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  border-radius: 50%;
+}
+
+/* ==================================footer section============================ */
+
+footer {
+  background-color: #d60505;
+  color: #fff;
+}
+
+.footer-wraper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle-disc {
+  display: flex;
+  gap: 120px;
+}
+
+.center {
+  text-align: center;
+}
+
+.footer-heading {
+  font-size: 20px;
+}
+
+.subscrib {
+  align-self: center;
+}
+
+input {
+  width: 250px;
+  padding: 5px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+input.sbttn {
+  width: 90%;
+  background-color: #ff0000;
+  padding: 15px 10px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form a {
+  background-color: rgb(9, 9, 56);
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.last-footer {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ====== */
+/*profile pic*/
+
+.profile-pic-div {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  top: 0px;
+  left: 15px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid grey;
+}
+
+#photo {
+  height: 100%;
+  width: 100%;
+}
+
+#file {
+  display: none;
+}
+
+#uploadBtn {
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: wheat;
+  line-height: 30px;
+  font-family: sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  display: none;
+}
+.nav-links a:hover {
+  background-color: #ff000085;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  border-radius: px;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.img-title {
+  margin-left: 20px;
+  color: #ff0000;
+}
+
+/* ---==== */
+
+form input[type="password"] {
+  padding: 1.5rem 0;
+  border-bottom: 0.1rem solid #999;
+  margin-bottom: 1.5rem;
+}
+
+form input[type="password"]:hover {
+  border-bottom-color: #444;
+}
+
+form input[type="password"]:focus {
+  border-bottom-color: #4b7bec;
+}
+
+.password-meter {
+  width: 100%;
+}
+
+.password-meter__bar {
+  width: 33.333%;
+  height: 1rem;
+  background: #eee;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.password-meter__bar__inner {
+  width: 0;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.password-meter__label {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.password-meter__label span {
+  font-weight: bold;
+}

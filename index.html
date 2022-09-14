@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donor-page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <script src="./pop.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      
+      /* =====  Styling The Popup ====== */
+.popup{
+  background-color: #ffffff;
+  width: 450px;
+  padding: 30px 40px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 8px;
+  font-family: "Poppins",sans-serif;
+  display: none;
+  text-align: center;
+}
+
+.popup button{
+  display: block;
+  margin:  0 0 20px auto;
+  background-color: transparent;
+  font-size: 30px;
+  color: #c5c5c5;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.popup p{
+  font-size: 14px;
+  text-align: justify;
+  margin: 20px 0;
+  line-height: 25px;
+}
+
+.popup a{
+  display: block;
+  width: 150px;
+  position: relative;
+  margin: 10px auto;
+  text-align: center;
+  background-color: #0f72e5;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 0;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <img src="./images/Group 54.png" alt="" />
+      <div class="right-nav">
+        <ul>
+          <li><a class="active" href="./index.html">HOME</a></li>
+          <li><a href="./howi-it-works.html">HOW IT WORKS</a></li>
+          <li><a href="./Campaings/Campaings.html">CAMPAING</a></li>
+          <li><a href="./LOG-IN-OUT/log-in.html">APPOINTMENT</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+        <input class="input" type="search" placeholder="Search  blood types" />
+        <div class="log">
+          <a href="./LOG-IN-OUT/log-in.php">LOG IN</a>
+          <a href="./LOG-IN-OUT/sign-up.php">SIGN UP</a>
+        </div>
+      </div>
+    </nav>
+    <!-- =========poppup========= -->
+    <div class="popup">
+      <button id="close" onclick="closeBox()">&times;</button>
+         <p>
+             <h1>WELCOME!</h1>
+             Hope you have a great day. <br>
+             Would you like to donate blood to help save 3 lives?
+        </p>
+         <a href="./Html/Reg.html">Yes. Let's go!</a>
+    </div>
+
+    <!-- =================================hero section================================= -->
+
+
+    <section class="hero-section">
+      <div class="hero-image">
+        <div class="hero-decs">
+          <h1>
+            YOUR BLOOD<br />
+            CAN BRING SMILE<br />
+            IN OTHER PERSON FACE<br />
+          </h1>
+
+          <button class="book">
+            <a href="./LOG-IN-OUT/sign-up.html">REGISTER NOW</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================about-us section========================== -->
+
+    <section class="about-section">
+      <h1 class="about-main">ABOUT US</h1>
+      <div class="about-row">
+        <div class="about-col">
+          <p class="about-heading">Who are we?</p>
+          <p class="about-dis">
+            Social donors is for public donation center with blood donation<br />
+            members in the changing health care system
+          </p>
+          <div class="about-list">
+            <div class="one-list">
+              <div class="dots"></div>
+              <p class="list-heading">
+                Specialist blood donors and clinical supervision.
+              </p>
+              ``````
+            </div>
+
+            <div class="one-list">
+              <div class="dots"></div>
+              <p class="list-heading">
+                Increasing communication with our members.
+              </p>
+            </div>
+
+            <div class="one-list">
+              <div class="dots"></div>
+              <p class="list-heading">
+                High quality assessment, diagnosis and treatment .
+              </p>
+            </div>
+
+            <div class="one-list">
+              <div class="dots"></div>
+              <p class="list-heading">
+                Examine critically to ensure alignment.
+              </p>
+            </div>
+            <div class="one-list">
+              <div class="dots"></div>
+              <p class="list-heading">
+                The extra care of a multi-disciplinary team.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="about-col last-col-about">
+          <div class="my-image">
+            <img src="./images/about-img.png" alt="" sizes="" srcset="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===========================gallery section==================== -->
+    <section class="gallery">
+      <div class="gallery-section">
+        <div class="ways">
+          <img src="./images/ways.png" alt="" />
+          <div class="was-left">
+            <p class="ways-heading">Ways to help</p>
+
+            <p class="ways-disc">
+              Blood Center is public donation center with blood donation<br />
+              members in the changing health care system.Founded in 1978, <br />
+              Blood Center is one of the nation’s oldest and largest
+              nonprofit<br />
+              transfusion medicine organizations. <br />
+            </p>
+
+            <div class="list-gallery">
+              <div>
+                <div class="one-line">
+                  <div class="dots"></div>
+                  <p class="one">Inspiring people to give blood</p>
+                </div>
+
+                <div class="one-line">
+                  <div class="dots"></div>
+                  <p class="one">
+                    Specialist blood donors and clinical supervision.
+                  </p>
+                </div>
+
+                <div class="one-line">
+                  <div class="dots"></div>
+                  <p class="one">Producing a safe and ready blood supply</p>
+                </div>
+              </div>
+
+              <div>
+                <div class="one-line">
+                  <div class="dots"></div>
+                  <p class="one">Increasing communication with our members.</p>
+                </div>
+
+                <div class="one-line">
+                  <div class="dots"></div>
+                  <p class="one">
+                    High quality assessment, diagnosis and treatment
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-container">
+          <p class="photo-gallery">PHOTO GALLERY</p>
+          <div class="gallery-wrapper">
+            <img src="./images/gallery-1.png" alt="" srcset="" />
+            <img src="./images/gallery-2.png" alt="" srcset="" />
+            <img src="./images/gallery-3.png" alt="" srcset="" />
+            <img src="./images/gallery-4.png" alt="" srcset="" />
+            <img src="./images/gallery-5.png" alt="" srcset="" />
+            <img src="./images/gallery-6.png" alt="" srcset="" />
+            <img src="./images/gallery-7.png" alt="" srcset="" />
+            <img src="./images/gallery-8.png" alt="" srcset="" />
+            <img src="./images/gallery-9.png" alt="" srcset="" />
+            <img src="./images/gallery-10.png" alt="" srcset="" />
+            <img src="./images/gallery-11.png" alt="" srcset="" />
+            <img src="./images/gallery-12.png" alt="" srcset="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================gallerysection================ -->
+    <footer>
+      <div class="footer-wraper">
+        <div class="main-footer">
+          <div class="footer-col">
+            <p class="footer-heading">Contact Us</p>
+
+            <p>
+              support@donation.com<br />
+              helpme@donation.com<br />
+            </p>
+
+            <p>
+              Road-2,3/A East Shibgonj<br />
+              Sylhet-3100, Bangladesh<br />
+            </p>
+
+            <p>
+              Office: (+880) 0823 560 433<br />
+              Cell: (+880) 0723 161 343<br />
+            </p>
+          </div>
+          <div class="footer-col middle-fo">
+            <p class="footer-heading center">Supporting links</p>
+            <div class="middle-disc">
+              <div>
+                <p>Thalassemia Cell</p>
+
+                <p>Elofrosis</p>
+
+                <p>Myelodysasia Blood</p>
+
+                <p>Count Hemolytimia</p>
+
+                <p>Ychromas Eosis</p>
+              </div>
+              <div>
+                <p>Hyrcoagulable</p>
+
+                <p>Thrombo Xtosis</p>
+
+                <p>Sicklenemiaxs</p>
+
+                <p>Aplastic</p>
+
+                <p>Aplastic</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-col subscrib">
+            <p class="footer-heading">Subscribe to our news:</p>
+            <form action="">
+              <input type="text" placeholder="Enter your email" />
+              <a href="">Subscribe</a>
+            </form>
+          </div>
+        </div>
+        <div class="last-footer">
+          <img src="./images/Group 54.png" alt="" />
+          <p>@social donors 2011-2022 Terms & Conditions Privacy</p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com"
+              ><img src="./images/instagram-ico.svg" alt=""
+            /></a>
+            <a href="https://twitter.com"
+              ><img src="./images/twitter-ico.svg" alt=""
+            /></a>
+            <a href="https://www.facebook.com"
+              ><img src="./images/facebook-ico.svg" alt=""
+            /></a>
+            <a href="https://www.youtube.com"
+              ><img src="./images/yootube-ico.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
