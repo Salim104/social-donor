@@ -14,9 +14,11 @@ if(isset($_POST['submit'])) {
     $number = trim($_POST['number']);
     $password = trim($_POST['password']);
 
-$insert = mysqli_query($db, "INSERT INTO user_login VALUE (NULL,'$firstN', '$profile', '$gender', '$lastN', '$age', '$email','$number','$password' )");
+$insert = mysqli_query($db, "INSERT INTO user_login VALUE (NULL,'$firstN', '$lastN', '$email', '$password', '$gender','$profile','$age','$number' )");
 
-
+ echo "<pre>";
+  var_dump($insert);
+ echo "</pre>";
 
 //I can display information here
 if($insert > 0) {
@@ -162,7 +164,7 @@ form input[type="password"]:focus {
                   <div>
                       <input id="password" name="password" class="js--password"type="password" placeholder="Enter your password here." />
                      <div class="password-meter">
-                       <!-- okkkk -->
+                       <!-- password-check-->
                       <div class="password-meter__bar">
                         <div class="password-meter__bar__inner js--password-bar"></div>
                       </div>

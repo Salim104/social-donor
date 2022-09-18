@@ -23,13 +23,13 @@
    * @return {Object}
    */
   let scoreToData = ( score ) => {    
-    if ( score >= 30 ) {
+    if ( score >= 15 ) {
       return {
         width: '100%',
         color: '#26de81',
         label: 'Strong',
       };
-    } else if ( score >= 20 ) {
+    } else if ( score >= 8 ) {
       return {
         width: '66%',
         color: '#fd9644',
@@ -62,3 +62,12 @@
     } );
   } );
 } )();
+
+
+// fetch('https://api.ipregistry.co/?key=tryout')
+//     .then(function (response) {
+//         return response.json();
+//     })
+//     .then(function (payload) {
+//         console.log(payload.location.country.name + ', ' + payload.location.city);
+//     });

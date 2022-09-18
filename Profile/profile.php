@@ -19,11 +19,11 @@ while($records = mysqli_fetch_assoc($result)){
   $phone= $records['phone'];
   $id= $records['id'];
 
-  echo "<pre>";
-   var_dump($records);
-  echo "</pre>";
+
 
   mysqli_query($db, "UPDATE user_login SET firstN='$firstN', lastN='$lastN', age='$age', phone='$phone', password='$password' WHERE id='$id'");
+
+  
 
 }
 ?>
